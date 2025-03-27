@@ -2,9 +2,9 @@ import paho.mqtt.client as mqtt
 import requests
 import json
 from datetime import datetime
-from pwnagotchi.plugins import BasePlugin
+from pwnagotchi import plugins
 
-class MacAddressLogger(BasePlugin):
+class MacAddressLogger(plugins.Plugin):
     __author__ = 'pyRegex'
     __version__ = '1.2.0'
     __license__ = 'MIT'
